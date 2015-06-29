@@ -15,7 +15,7 @@ RUN cd /opt && \
   mkdir nvidia_installers && \
   ./cuda_7.0.28_linux.run -extract=`pwd`/nvidia_installers && \
   cd nvidia_installers && \
-  NVIDIA-Linux-x86_64-346.46.run -s -N --no-kernel-module
+  ./NVIDIA-Linux-x86_64-346.46.run -s -N --no-kernel-module
 
 RUN cd /opt/nvidia_installers && \
   ./cuda-linux64-rel-7.0.28-19326674.run -noprompt
